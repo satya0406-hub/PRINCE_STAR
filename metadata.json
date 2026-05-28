@@ -1,0 +1,8 @@
+{
+  "name": "PRINCE STAR",
+  "description": "An elite AI Neural platform powered by Prince Star 3.2 architecture. Features high-performance Python-based neural processing, advanced content creation, and secure data vaults.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
