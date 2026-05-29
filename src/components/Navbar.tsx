@@ -28,7 +28,7 @@ export function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Current Affairs', path: '/stories' },
+    { name: 'STORIES', path: '/stories' },
     { name: 'Indian Laws', path: '/laws' },
     { name: 'News', path: '/news' },
     { name: 'Games', path: '/games' },
