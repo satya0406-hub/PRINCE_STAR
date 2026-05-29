@@ -136,12 +136,7 @@ export function Navbar() {
         </div>
         
         <div className="hidden md:flex items-center gap-6 border-l border-white/10 pl-8 ml-4">
-          {isAdmin && (
-            <>
-              <Link to="/admin" className="hidden sm:block text-sm font-bold tracking-widest text-slate-300 hover:text-white transition-colors">ADMIN</Link>
-              <div className="hidden sm:block h-4 w-[1px] bg-white/20" />
-            </>
-          )}
+          
           
           {/* Removed from here to place next to Home */}
 
