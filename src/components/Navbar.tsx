@@ -172,15 +172,7 @@ export function Navbar() {
                       <p className="text-[10px] font-black text-gray-500 uppercase tracking-[0.2em]">Protocol 3.0 Control</p>
                     </div>
                     <div className="py-2">
-                      {isAdmin && (
-                        <Link 
-                          to="/admin" 
-                          onClick={() => setIsProfileOpen(false)}
-                          className="flex items-center gap-4 px-5 py-3 hover:bg-amber-500/10 text-amber-500 hover:text-amber-400 border-b border-white/5 transition-all text-xs font-bold uppercase tracking-widest"
-                        >
-                          <Sparkles className="w-5 h-5 text-amber-500" /> Admin Panel
-                        </Link>
-                      )}
+                     
                       <Link 
                         to="/profile" 
                         onClick={() => setIsProfileOpen(false)}
