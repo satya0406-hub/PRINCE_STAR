@@ -172,7 +172,15 @@ export function Navbar() {
                       <p className="text-[10px] font-black text-gray-500 uppercase tracking-[0.2em]">Protocol 3.0 Control</p>
                     </div>
                     <div className="py-2">
-                     
+                     {isAdmin && (
+                      <Link
+                    to="/admin"
+                    onClick={() => setIsProfileOpen(false)}
+                    className="flex items-center gap-4 px-5 py-3 hover:bg-amber-500/10 text-amber-500 hover:text-amber-400 border-b border-white/5 transition-all text-xs font-bold uppercase tracking-widest"
+                      >
+                          <Sparkles className="w-5 h-5 text-amber-500" /> Admin Panel
+                      </Link>
+)                        }
                       <Link 
                         to="/profile" 
                         onClick={() => setIsProfileOpen(false)}
@@ -263,18 +271,7 @@ export function Navbar() {
               ))}
             </div>
 
-            {isAdmin && (
-              <div className="pt-4 border-t border-white/5 flex flex-col space-y-2">
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest pl-2 mb-2">Administrative Console</span>
-                <Link
-                  to="/admin"
-                  onClick={() => setIsOpen(false)}
-                  className="px-4 py-3 text-xs font-bold uppercase tracking-widest rounded-xl text-amber-400 hover:text-amber-300 bg-amber-500/10 border border-amber-500/20 text-center"
-                >
-                  Admin Control Panel
-                </Link>
-              </div>
-            )}
+            
 
             {profile?.badges?.length > 0 && (
               <div className="pt-4 border-t border-white/5">
